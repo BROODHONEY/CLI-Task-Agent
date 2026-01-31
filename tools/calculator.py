@@ -11,4 +11,5 @@ def calculate(expression: str) -> str:
 calculator_tool = Tool(
     name = "Calculator",
     func=calculate,
-    description="Useful for when you need to perform mathematical calculations. Input should be a valid mathematical expression.")
+    description="ONLY use this tool when the user provides a concrete mathematical expression "
+        "such as '45 * (10 + 2)'. Do NOT guess expressions.")
